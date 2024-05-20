@@ -20,9 +20,9 @@ img{
     /*color*/
     --hue:159;
     --base-color:hsl(var(--hue)36% 57%);
-    --base-color-second: hsl(var (--hue)65% 88%);
-    --base-color-alt: hsl(var (--hue)57% 53%);
-    --title-color: hsl(var (--hue)41% 10%);
+    --base-color-second: hsl(var(--hue) 65% 88%);
+    --base-color-alt: hsl(var(--hue) 57% 53%);
+    --title-color: hsl(var(--hue) 41% 10%);
     --text-color: hsl(0 0% 46%);
     --text-color-light:  hsl( 0 0% 98%);
     --body-color: hsl(0 0% 98%);
@@ -34,4 +34,23 @@ img{
 }
 html{
     scroll-behavior: smooth;
+}
+body{
+    font: 400 1rem var(--body-font);
+    color: var(--text-color);
+    background: var(--body-color);
+    -webkit-font-smoothing:antialiased
+}
+
+/*layout*/
+.container{
+    margin: 0  1.5rem;
+}
+/* logo */
+.logo{
+    font: 700 1.31rem var(--title-font);
+    color: var(--title-color);
+}
+.logo span{
+    color: var(--base-color);
 }
